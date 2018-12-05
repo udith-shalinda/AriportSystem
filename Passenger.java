@@ -1,14 +1,14 @@
 public class Passenger {
     String firstname;
     String surname;
-    int secondsInQueue;
+    int secondsInQueue=0;
     
     void setname(String firstname, String surname){
         this.firstname = firstname;
         this.surname = surname; 
     }
     void setsecondsInQueue(int secondsInQueue){
-        this.secondsInQueue = secondsInQueue;
+        this.secondsInQueue += secondsInQueue;
     }
     public String getfirstname(){
         return firstname;
@@ -18,7 +18,8 @@ public class Passenger {
     }
     public int getSecondsInQueue(){
         return secondsInQueue;
-    }
-    
-    
+    } 
+	public int getDelaytime(){
+		return secondsInQueue;
+	}
 }

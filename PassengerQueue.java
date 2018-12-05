@@ -1,5 +1,5 @@
 public class PassengerQueue {
-    int maxInt =3;
+    int maxInt =20;
     int first =0;
     int last = -1;
     Passenger[] pa = new Passenger[maxInt];
@@ -48,14 +48,14 @@ public class PassengerQueue {
     void display(){
 		if(first<= last){
 			for(int i = first ; i <= last; i++){
-				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname());
+				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname()+ " and delay time is : "+ pa[i].getDelaytime());
 			}
 		}else{
 			for(int i = first ; i < maxInt; i++){
-				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname());
+				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname()+ "delay time is : "+ pa[i].getDelaytime());
 			}
 			for(int i = 0 ; i <= last; i++){
-				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname());
+				System.out.println("passenger is "+ pa[i].getfirstname()+ " "+ pa[i].getsurname()+ "delay time is : "+ pa[i].getDelaytime());
 			}
 		}
 		System.out.println();
